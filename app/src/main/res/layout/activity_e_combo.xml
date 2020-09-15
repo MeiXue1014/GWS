@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ECombo">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/capture" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/e_combo"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/nugget"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/unnamed" />
+
+            <ImageView
+                android:id="@+id/chickenburger"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/hotdogset"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cocacolaminus"
+                tools:srcCompat="@drawable/hotdogset" />
+
+            <ImageView
+                android:id="@+id/popcornset"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogsettitle"
+                tools:srcCompat="@drawable/popcornset" />
+
+            <ImageView
+                android:id="@+id/nuggetset"
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popcornsettitle"
+                tools:srcCompat="@drawable/nuggetset" />
+
+            <ImageView
+                android:id="@+id/sevenup"
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/cocacola"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgerminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/hundredplus"
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/sevenup"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgerminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/sprite"
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/hundredplus"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgerminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/cocacola"
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgerminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/cheesewedges"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/friesminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/popcorn"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cheesewedgesminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/hotdog"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetminus"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/fries"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/fries" />
+
+            <TextView
+                android:id="@+id/nuggettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/nugget"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nugget" />
+
+            <TextView
+                android:id="@+id/nuggetno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/nuggetminus"
+                app:layout_constraintTop_toBottomOf="@+id/nuggettitle" />
+
+            <TextView
+                android:id="@+id/hotdogno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/hotdogminus"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogtitle" />
+
+            <TextView
+                android:id="@+id/chickenburgerno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/chickenburgerminus"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgertitle" />
+
+            <TextView
+                android:id="@+id/cocacolano"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/cocacolaminus"
+                app:layout_constraintTop_toBottomOf="@+id/cocacolatitle" />
+
+            <TextView
+                android:id="@+id/sevenupno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/sevenupminus"
+                app:layout_constraintTop_toBottomOf="@+id/sevenuptitle" />
+
+            <TextView
+                android:id="@+id/hundredplusno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/hundredplusminus"
+                app:layout_constraintTop_toBottomOf="@+id/hundredplustitle" />
+
+            <TextView
+                android:id="@+id/spriteno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spriteminus"
+                app:layout_constraintTop_toBottomOf="@+id/spritetitle" />
+
+            <TextView
+                android:id="@+id/friesno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/friesplus"
+                app:layout_constraintTop_toBottomOf="@+id/friestitle" />
+
+            <TextView
+                android:id="@+id/cheesewedgesno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/cheesewedgesplus"
+                app:layout_constraintTop_toBottomOf="@+id/cheesewedgestitle" />
+
+            <TextView
+                android:id="@+id/popcornno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/popcornplus"
+                app:layout_constraintTop_toBottomOf="@+id/popcorntitle" />
+
+            <TextView
+                android:id="@+id/hotdogsetno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/hotdogsetplus"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogset" />
+
+            <TextView
+                android:id="@+id/popcornsetno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/popcornsetplus"
+                app:layout_constraintTop_toBottomOf="@+id/popcornset" />
+
+            <TextView
+                android:id="@+id/nuggetsetno"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/nuggetsetplus"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetset" />
+
+            <TextView
+                android:id="@+id/hotdogtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hotdog"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdog" />
+
+            <TextView
+                android:id="@+id/chickenburgertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/chicken_burger"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburger" />
+
+            <TextView
+                android:id="@+id/cocacolatitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/coca_cola"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cocacola" />
+
+            <TextView
+                android:id="@+id/hotdogsettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hotdog_set"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogset" />
+
+            <TextView
+                android:id="@+id/popcornsettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/popcorn_set"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popcornset" />
+
+            <TextView
+                android:id="@+id/nuggetsettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/nugget_set"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetset" />
+
+            <TextView
+                android:id="@+id/sevenuptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/seven_up"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/cocacolatitle"
+                app:layout_constraintTop_toBottomOf="@+id/sevenup" />
+
+            <TextView
+                android:id="@+id/hundredplustitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hundred_plus"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/sevenuptitle"
+                app:layout_constraintTop_toBottomOf="@+id/hundredplus" />
+
+            <TextView
+                android:id="@+id/spritetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/sprite"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/hundredplustitle"
+                app:layout_constraintTop_toBottomOf="@+id/sprite" />
+
+            <TextView
+                android:id="@+id/popcorntitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/popcorn"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popcorn" />
+
+            <TextView
+                android:id="@+id/friestitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center_horizontal"
+                android:text="@string/fries"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fries" />
+
+            <TextView
+                android:id="@+id/cheesewedgestitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/cheese_wedges"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cheesewedges" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/total"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetsettitle" />
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:text="RM 0.00"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetsettitle" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/confirm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/nuggetminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggettitle" />
+
+            <Button
+                android:id="@+id/hotdogminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogtitle" />
+
+            <Button
+                android:id="@+id/chickenburgerminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgertitle" />
+
+            <Button
+                android:id="@+id/cocacolaminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cocacolatitle" />
+
+            <Button
+                android:id="@+id/sevenupminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/cocacolaplus"
+                app:layout_constraintTop_toBottomOf="@+id/sevenuptitle" />
+
+            <Button
+                android:id="@+id/hundredplusminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/sevenupplus"
+                app:layout_constraintTop_toBottomOf="@+id/hundredplustitle" />
+
+            <Button
+                android:id="@+id/spriteminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/hundredplusplus"
+                app:layout_constraintTop_toBottomOf="@+id/spritetitle" />
+
+            <Button
+                android:id="@+id/friesminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/friesno"
+                app:layout_constraintTop_toBottomOf="@+id/friestitle" />
+
+            <Button
+                android:id="@+id/cheesewedgesminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/cheesewedgesno"
+                app:layout_constraintTop_toBottomOf="@+id/cheesewedgestitle" />
+
+            <Button
+                android:id="@+id/hotdogsetminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/hotdogsetno"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogset" />
+
+            <Button
+                android:id="@+id/popcornsetminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/popcornsetno"
+                app:layout_constraintTop_toBottomOf="@+id/popcornset" />
+
+            <Button
+                android:id="@+id/nuggetsetminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/nuggetsetno"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetset" />
+
+            <Button
+                android:id="@+id/popcornminus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:text="@string/minus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/popcornno"
+                app:layout_constraintTop_toBottomOf="@+id/popcorntitle" />
+
+            <Button
+                android:id="@+id/nuggetplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/nuggetno"
+                app:layout_constraintTop_toBottomOf="@+id/nuggettitle" />
+
+            <Button
+                android:id="@+id/friesplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/friestitle" />
+
+            <Button
+                android:id="@+id/cheesewedgesplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cheesewedgestitle" />
+
+            <Button
+                android:id="@+id/popcornplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popcorntitle" />
+
+            <Button
+                android:id="@+id/hotdogplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/hotdogno"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogtitle" />
+
+            <Button
+                android:id="@+id/chickenburgerplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/chickenburgerno"
+                app:layout_constraintTop_toBottomOf="@+id/chickenburgertitle" />
+
+            <Button
+                android:id="@+id/cocacolaplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/cocacolano"
+                app:layout_constraintTop_toBottomOf="@+id/cocacolatitle" />
+
+            <Button
+                android:id="@+id/sevenupplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/sevenupno"
+                app:layout_constraintTop_toBottomOf="@+id/sevenuptitle" />
+
+            <Button
+                android:id="@+id/hundredplusplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/hundredplusno"
+                app:layout_constraintTop_toBottomOf="@+id/hundredplustitle" />
+
+            <Button
+                android:id="@+id/spriteplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/spriteno"
+                app:layout_constraintTop_toBottomOf="@+id/spritetitle" />
+
+            <Button
+                android:id="@+id/hotdogsetplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotdogset" />
+
+            <Button
+                android:id="@+id/popcornsetplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popcornset" />
+
+            <Button
+                android:id="@+id/nuggetsetplus"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:gravity="center_horizontal"
+                android:text="@string/plus"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nuggetset" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    tools:context=".MainActivity">
+
+    <!-- Sub Action Bar -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#252525"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="#252525"
+            android:onClick="back_nowShowing"
+            app:srcCompat="@drawable/back_button"
+            tools:ignore="OnClick,VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/title_now_showing"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <!-- Separate Line -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffff00"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-47dp" />
+
+    <!-- Movie -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#252525"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:padding="4dp"
+            android:rowCount="6"
+            android:background="#252525">
+
+            <!--Row 1-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#252525"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing1_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing1_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing2_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing2_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 3-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing3_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing3_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Row 2-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing4_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing4_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing5_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing5_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 3-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing6_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing6_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Row 3-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing7_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing7_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing8_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing8_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 3-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing9_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing9_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Row 4-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing10_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing10_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing11_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing11_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 3-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing12_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing12_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Row 5-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing13_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing13_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing14_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing14_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 3-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing15_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing15_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Row 6-->
+            <!--Column 1-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing16_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing16_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--Column 2-->
+            <RelativeLayout
+                android:id="@+id/RelativeLayout17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/movie_nowShowing17_image1"
+                        android:layout_width="125dp"
+                        android:layout_height="160dp" />
+
+                    <TextView
+                        android:id="@+id/movie_nowShowing17_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/goudy_bookletter_1911"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

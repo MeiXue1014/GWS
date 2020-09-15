@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login4">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowTime"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SelectSeat"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ConfirmTicket"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ECombo"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".TotalPayment"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MyTicket"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Home"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Experience"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Feedback"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rating"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".General"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Popular"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectMovie"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditProfile"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Food"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Faq"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Policy"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing1Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing2Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing3Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing4Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing5Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing6Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing7Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing8Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing9Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing10Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing11Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing12Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing13Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing14Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing15Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing16Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NowShowing17Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon1Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon2Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon3Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon4Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon5Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon6Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon7Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon8Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon9Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon10Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon11Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon12Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon13Activity"
+            android:label="GWS"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
